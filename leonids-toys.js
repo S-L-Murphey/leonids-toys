@@ -119,6 +119,15 @@ console.log(toy.id);
 console.log(toys.length);
 console.log(toys);
 
+//
+//
+//
+//
+//
+//
+//
+
+/* Discontinued Toys: Write a function that removes a toy from his inventory when a supplier discontinues it */ 
 
 const removeProduct = (idNumber) => {
     const convertID = (idNumber - 1);
@@ -131,3 +140,4 @@ const myIdNum = removeProduct(3)
 const toyRemoval = toys.splice(myIdNum, 1);
 
 console.log(toys);
+
