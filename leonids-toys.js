@@ -141,3 +141,41 @@ const toyRemoval = toys.splice(myIdNum, 1);
 
 console.log(toys);
 
+//
+//
+//
+//
+//
+//
+//
+
+/*The Perry Scope: Fix the code. */ 
+
+const currentInventory = [
+    "Muscle Man",
+    "Dora the Scientist",
+    "Princess Sparkles",
+    "Perry Scope",
+    "Explorer Backpack",
+    "Space Scout Suit",
+    "Geology Mineral Dig Kit",
+    "Perry Scope"
+]
+
+const sellPerryScope = () => {
+    let availableForPurchase = false //had to move this outside of the for-loop. WHY?
+    for (const toy of currentInventory) {
+        /*let availableForPurchase = false this had to be moved outside the for-loop b/c anything outside this for-loop
+        had any idea that the 'availableForPurchase' even exists. And you can see it is references outside the for-loop.*/
+
+        if (toy === "Perry Scope") {
+            availableForPurchase = true
+        }
+    }
+
+    if (availableForPurchase) {
+        console.log("Enjoy your new Perry Scope")
+    }
+}
+
+sellPerryScope()
